@@ -1,0 +1,50 @@
+.model small
+.code
+org 100h
+
+start:
+mov ah,06h
+mov bh,60h
+mov ch,0
+mov cl,0
+mov dh,4
+mov dl,79
+int 10h
+mov ah,06h
+mov bh,50h
+mov ch,5
+mov cl,0
+mov dh,9
+mov dl,79
+int 10h
+mov ah,06h
+mov bh,50h
+mov ah,06h
+mov bh,40h
+mov ch,10
+mov cl,0
+mov dh,14
+mov dl,79
+int 10h
+mov ah,06h	
+mov bh,30h	
+mov ch,15	
+mov cl,0
+mov dh,19	
+mov dl,79	
+int 10h	
+mov ah,06h	
+mov bh,20h	
+mov ch,20	
+mov cl,0
+mov dh,23
+mov dl,79
+int 10h
+mov ah,02
+mov dh,24
+mov dl,0
+mov bh,0
+int 10h
+int 20h
+
+end start
